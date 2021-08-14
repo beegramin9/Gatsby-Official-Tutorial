@@ -4,6 +4,8 @@ module.exports = {
     title: "Gatsby-OfficialTutorial",
   },
   plugins: [
-    "gatsby-plugin-gatsby-cloud"
+    "gatsby-plugin-gatsby-cloud",
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
   ],
 };

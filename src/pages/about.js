@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout } from '../components/componentsIndex';
+import { Layout } from '../components';
 
 const AboutPage = () => {
     return (
