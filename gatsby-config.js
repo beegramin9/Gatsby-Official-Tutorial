@@ -27,6 +27,20 @@ module.exports = {
     "gatsby-plugin-mdx",
     // GraphQL data layer에 allMdx, mdx field 추가
     // MDXRenderer Component 사용가능
+    `gatsby-remark-images`,
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1920,
+            },
+          },
+        ],
+      },
+    },
   ],
 };
 // transform plugin은 다른 타입의 nodes를 필요한 타입의 nodes로 변환한다
