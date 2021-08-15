@@ -40,8 +40,8 @@ export const Layout = ({children}) => {
             <ThemeProvider theme={theme}>
                 <GlobalStyle/>
                 <Header/>
-                    {children}
-                <Footer/> 
+                {children}
+                <Footer/>
             </ThemeProvider>
         </LayoutWrapper>
     )

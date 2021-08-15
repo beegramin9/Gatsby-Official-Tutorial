@@ -1,7 +1,5 @@
 import React from "react";
-import { Link, useStaticQuery, graphql } from 'gatsby'; 
 import { StaticImage } from 'gatsby-plugin-image';
-
 import { NavDropDown } from "../components";
 import { HeaderWrapper, BlogNameWrapper } from '../styles';
 //* useStaticQuery로 graphQl에서 데이터를 얻어온다.

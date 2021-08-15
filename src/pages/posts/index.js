@@ -1,21 +1,32 @@
 import React from 'react';
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
+import { StaticImage } from 'gatsby-plugin-image';
 import { Layout } from '../../components';
+import { StyledLink,
+        HeroImageWrapper,
+        PostsWrapper, EachPostWrapper,
+        H2, P } from "../../styles";
+
 
 const PostsPage = ({data}) => {
     return (
     <Layout>
-      <h1>My Blog Posts</h1>
-      {data.allMdx.nodes.map( node => (
-        <article key={node.id}>
-          <h2>
-            <Link to={`/posts/${node.slug}`}>
-              {node.frontmatter.title}
-            </Link>
-          </h2>
-          <p>Posted: {node.frontmatter.date}</p>
-        </article>
-      ))}
+      <HeroImageWrapper>
+        <StaticImage src='../images/heroImage.jpg' alt="Hero Image"/>
+      </HeroImageWrapper>
+      <PostsWrapper>
+        {data.allMdx.nodes.map( node => (
+          <EachPostWrapper key={node.id}>
+            <H2>
+              <StyledLink to={`/posts/${node.slug}`}>
+                {node.frontmatter.title}
+              </StyledLink>
+            </H2>
+            <P>{node.frontmatter.excerpt}</P>
+            <P>Posted: {node.frontmatter.date}</P>
+          </EachPostWrapper>
+        ))}
+      </PostsWrapper>
     </Layout>
   )
 }

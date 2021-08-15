@@ -34,7 +34,9 @@ export const StyledBurger = styled.div`
 `
 export const RightNav = styled.div`
     display: flex;
+    gap: 1rem;
     
+
     @media ${(props) => props.theme.breakpoints.mobile} {
     flex-direction: column;
     justify-content: flex-start;

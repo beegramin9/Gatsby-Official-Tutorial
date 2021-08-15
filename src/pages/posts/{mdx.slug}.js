@@ -7,7 +7,7 @@ import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 import { Layout } from '../../components';
-
+import { HeroImageWrapper } from "../../styles";
 
 const BlogPost = ({data}) => {
   const image = getImage(data.mdx.frontmatter.hero_image);
@@ -16,10 +16,11 @@ const BlogPost = ({data}) => {
   return (
     <Layout>
       <h1>{data.mdx.frontmatter.title}</h1>
-      <GatsbyImage
-        image={image}
-        alt={data.mdx.frontmatter.hero_image_alt}
-      />
+      <HeroImageWrapper>
+        <GatsbyImage
+          image={image}
+          alt={data.mdx.frontmatter.hero_image_alt}/>
+      </HeroImageWrapper>
       <p>{data.mdx.frontmatter.date}</p>
       <MDXRenderer>
         {data.mdx.body}
@@ -34,6 +35,7 @@ export const query = graphql`
     mdx(id: {eq: $id}) {
       frontmatter {
         title
+        excerpt
         date(formatString: "MMMM D, YYYY")
         hero_image_alt
         hero_image {

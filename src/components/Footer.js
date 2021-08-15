@@ -1,6 +1,7 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
-import { FooterWrapper, FooterSocialWrapper, FooterSocialIcons} from '../styles';
+import { FooterWrapper, FooterSocialWrapper, FooterSocialIcons,
+        P } from '../styles';
 
 export const Footer = () => {
     return (
@@ -20,8 +21,8 @@ export const Footer = () => {
                         <StaticImage src="../images/svgs/linkedin.svg" alt="Linkedin logo"/>
                     </a>
                 </FooterSocialIcons>
-                <p // size='xSmall' color="dark3"
-                >ⓒ 2021 Company. All right reserved</p>
+                <P size='xSmall' color="dark3"
+                >ⓒ 2021 Company. All right reserved</P>
             </FooterSocialWrapper>
         </FooterWrapper> 
     )
