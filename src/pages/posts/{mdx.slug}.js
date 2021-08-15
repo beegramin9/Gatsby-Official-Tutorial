@@ -7,7 +7,8 @@ import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 import { Layout } from '../../components';
-import { HeroImageWrapper } from "../../styles";
+import { HeroImageWrapper,
+        ContentWrapper } from "../../styles";
 
 const BlogPost = ({data}) => {
   const image = getImage(data.mdx.frontmatter.hero_image);
@@ -15,16 +16,19 @@ const BlogPost = ({data}) => {
   // and returns the gatsbyImageData object for that node.
   return (
     <Layout>
-      <h1>{data.mdx.frontmatter.title}</h1>
       <HeroImageWrapper>
         <GatsbyImage
           image={image}
           alt={data.mdx.frontmatter.hero_image_alt}/>
       </HeroImageWrapper>
-      <p>{data.mdx.frontmatter.date}</p>
-      <MDXRenderer>
-        {data.mdx.body}
-      </MDXRenderer>
+      <ContentWrapper>
+        <h1>{data.mdx.frontmatter.title}</h1>
+        <p>{data.mdx.frontmatter.date}</p>
+        <MDXRenderer>
+          {data.mdx.body}
+        </MDXRenderer>
+
+      </ContentWrapper>
     </Layout>
   )
 }

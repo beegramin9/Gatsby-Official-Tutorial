@@ -22,8 +22,8 @@ const PostsPage = ({data}) => {
                 {node.frontmatter.title}
               </StyledLink>
             </H2>
-            <P>{node.frontmatter.excerpt}</P>
-            <P>Posted: {node.frontmatter.date}</P>
+            <P color="dark2">{node.frontmatter.excerpt}</P>
+            <P color="dark3">Posted: {node.frontmatter.date}</P>
           </EachPostWrapper>
         ))}
       </PostsWrapper>
@@ -44,8 +44,9 @@ export const query = graphql`
       # which is the smallest form unit data
       # differs from plugins
         frontmatter {
-          date(formatString: "MMMM D, YYYY")
           title
+          excerpt
+          date(formatString: "MMMM D, YYYY")
         }
         id
         slug

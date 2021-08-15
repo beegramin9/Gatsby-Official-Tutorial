@@ -12,8 +12,9 @@ export * from "./HeaderStyle";
 export * from "./NavDropDownStyle";
 export * from "./FooterStyle";
 
-
 // Posts page Components
 export * from "./PostsStyle";
 
+// Blog Content
+export * from "./ContentStyle";
 

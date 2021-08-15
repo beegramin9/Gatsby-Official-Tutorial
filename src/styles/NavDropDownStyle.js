@@ -4,7 +4,7 @@ export const StyledBurger = styled.div`
     width: 2rem;
     height: 2rem;
     position: fixed;
-    top: 15px;
+    top: 41px;
     right: 20px;
     z-index: 20;
     display: none;
@@ -36,19 +36,16 @@ export const RightNav = styled.div`
     display: flex;
     gap: 1rem;
     
-
+    //* 요거 수정해야함
     @media ${(props) => props.theme.breakpoints.mobile} {
     flex-direction: column;
     justify-content: flex-start;
-    background: ${(props) => props.theme.colors.darkpurple};
     position: fixed;
-    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 40vw;
+    z-index: 19;
+    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(200px)'};
+    top: 85px;
+    right: 15px;
     transition: transform 0.3s ease-in-out;
-    padding-top: 4.5rem;
     gap: 1rem
     }
 `;
