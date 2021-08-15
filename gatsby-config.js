@@ -10,6 +10,9 @@ module.exports = {
     // how to add blog posts to the data layer
     // In other words, GraphQL search posts data at ${__dirname}/posts directory
     //* __dirname is a variable from Node.js that stores the absolute path for the directory that contains the file currently being run.
+    "gatsby-transformer-sharp",
+    // 각 posts에 들어갈 featureImage를 위한 plugin
+    //* .jpg/png/tiff 확장자를 가진 File node를 imageSharp node로 변환 
     {
       resolve: "gatsby-source-filesystem", 
       //todo Creates "File nodes"

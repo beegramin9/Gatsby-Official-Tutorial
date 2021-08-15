@@ -10,7 +10,7 @@ const IndexPage = () => {
     <main>
       <Layout pageTitle="Home Page">
         <p>I'm making this by following the Gatsby Tutorial.</p>
-        <StaticImage src='../images/featureImage.jpg' alt="Feature Image"></StaticImage>
+        <StaticImage src='../images/heroImage.jpg' alt="Hero Image"></StaticImage>
       </Layout>
     </main>
   )

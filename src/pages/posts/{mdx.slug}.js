@@ -2,12 +2,23 @@ import React from 'react';
 import { graphql } from "gatsby";
 //* render the actual "body" contents of your MDX blog posts. 
 import { MDXRenderer } from 'gatsby-plugin-mdx';
+
+//* Dynamically pulls in image file
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+
 import { Layout } from '../../components';
 
 
 const BlogPost = ({data}) => {
+  const image = getImage(data.mdx.frontmatter.hero_image);
+  // getImage: takes in a File node or an ImageSharp node
+  // and returns the gatsbyImageData object for that node.
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
+      <GatsbyImage
+        image={image}
+        alt={data.mdx.frontmatter.hero_image_alt}
+      />
       <p>{data.mdx.frontmatter.date}</p>
       <MDXRenderer>
         {data.mdx.body}
@@ -23,6 +34,13 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "MMMM D, YYYY")
+        hero_image_alt
+        hero_image {
+          id
+          childImageSharp {
+            gatsbyImageData
+          }
+        }
       }
       body
     }

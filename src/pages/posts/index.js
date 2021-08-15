@@ -1,19 +1,18 @@
 import React from 'react';
-import { graphql } from "gatsby";
+import { Link, graphql } from "gatsby";
 import { Layout } from '../../components';
-//* render the actual "body" contents of your MDX blog posts. 
-import { MDXRenderer } from 'gatsby-plugin-mdx'; 
 
 const PostsPage = ({data}) => {
     return (
     <Layout pageTitle="My Blog Posts">
       {data.allMdx.nodes.map( node => (
         <article key={node.id}>
-          <h2>{node.frontmatter.title}</h2>
+          <h2>
+            <Link to={`/posts/${node.slug}`}>
+              {node.frontmatter.title}
+            </Link>
+          </h2>
           <p>Posted: {node.frontmatter.date}</p>
-          <MDXRenderer>
-            {node.body}
-          </MDXRenderer>
         </article>
       ))}
     </Layout>
@@ -37,11 +36,12 @@ export const query = graphql`
           title
         }
         id
-        body
+        slug
       }
     }
   }
 `
+// 8bc784c9-a37c-59b5-9625-32e0e1cdbd9b
 //* 이 query는 page component에 props.data로 전달되어 component 내에서 사용할 수 있다.
 
 export default PostsPage;
