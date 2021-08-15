@@ -14,7 +14,8 @@ const BlogPost = ({data}) => {
   // getImage: takes in a File node or an ImageSharp node
   // and returns the gatsbyImageData object for that node.
   return (
-    <Layout pageTitle={data.mdx.frontmatter.title}>
+    <Layout>
+      <h1>{data.mdx.frontmatter.title}</h1>
       <GatsbyImage
         image={image}
         alt={data.mdx.frontmatter.hero_image_alt}

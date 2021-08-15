@@ -4,7 +4,8 @@ import { Layout } from '../../components';
 
 const PostsPage = ({data}) => {
     return (
-    <Layout pageTitle="My Blog Posts">
+    <Layout>
+      <h1>My Blog Posts</h1>
       {data.allMdx.nodes.map( node => (
         <article key={node.id}>
           <h2>
