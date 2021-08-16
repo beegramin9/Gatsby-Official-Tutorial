@@ -34,9 +34,8 @@ export const StyledBurger = styled.div`
 `
 export const RightNav = styled.div`
     display: flex;
-    gap: 1rem;
-    
-    //* 요거 수정해야함
+    gap: 2rem;
+
     @media ${(props) => props.theme.breakpoints.mobile} {
     flex-direction: column;
     justify-content: flex-start;
@@ -44,8 +43,12 @@ export const RightNav = styled.div`
     z-index: 19;
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(200px)'};
     top: 85px;
-    right: 15px;
+    right: 25px;
     transition: transform 0.3s ease-in-out;
     gap: 1rem
+    }
+
+    img {
+        height: 30px;
     }
 `;

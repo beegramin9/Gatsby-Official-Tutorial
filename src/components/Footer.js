@@ -8,17 +8,17 @@ export const Footer = () => {
         <FooterWrapper>
             <FooterSocialWrapper>
                 <FooterSocialIcons>
-                    <a href="https://www.wontaechoi.tech/" target="_blank" rel="noopener norefer">
-                        <StaticImage src="../images/svgs/portfolio.svg" alt="Portfolio logo"/>
+                    <a href="https://www.wontaechoi.tech/" target="_blank" rel="noopener noreferrer">
+                        <StaticImage src="../images/footer/portfolio.svg" alt="Portfolio logo"/>
                     </a>
-                    <a href="https://github.com/beegramin9/" target="_blank" rel="noopener norefer">
-                        <StaticImage src="../images/svgs/github.svg" alt="Github logo"/>
+                    <a href="https://github.com/beegramin9/" target="_blank" rel="noopener noreferrer">
+                        <StaticImage src="../images/footer/github.svg" alt="Github logo"/>
                     </a>
-                    <a href="https://www.instagram.com/beestron9/" target="_blank" rel="noopener norefer">
-                        <StaticImage src="../images/svgs/instagram.svg" alt="Instagram logo"/>
+                    <a href="https://www.instagram.com/beestron9/" target="_blank" rel="noopener noreferrer">
+                        <StaticImage src="../images/footer/instagram.svg" alt="Instagram logo"/>
                     </a>
-                    <a href="https://www.linkedin.com/in/wontae-choi-917259209" target="_blank" rel="noopener norefer">
-                        <StaticImage src="../images/svgs/linkedin.svg" alt="Linkedin logo"/>
+                    <a href="https://www.linkedin.com/in/wontae-choi-917259209" target="_blank" rel="noopener noreferrer">
+                        <StaticImage src="../images/footer/linkedin.svg" alt="Linkedin logo"/> 
                     </a>
                 </FooterSocialIcons>
                 <P size='xSmall' color="dark3"

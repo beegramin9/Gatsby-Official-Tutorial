@@ -8,3 +8,6 @@ export * from './NavDropDown';
 
 // Pagination
 export * from './Pagination';
+
+// Button
+export * from './Button';

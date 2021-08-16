@@ -1,4 +1,4 @@
-export default {
+const theme = {
     fonts: {
         main: 'Muli, sans-serif',
         code: 'Roboto Mono, monospace'
@@ -33,3 +33,5 @@ export default {
         shadow1: '0px 8px 16px rgba(0, 0, 0, 0.45)'
     }
 }
+
+export default theme;

@@ -20,3 +20,9 @@ export * from "./ContentStyle";
 
 // Pagination Style
 export * from "./PaginationStyle";
+
+// Button Style
+export * from "./ButtonStyle";
+
+// Projects Style
+export * from "./ProjectsStyle";

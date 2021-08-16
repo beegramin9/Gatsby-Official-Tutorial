@@ -1,41 +1,34 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import { Layout, 
-        Pagination } from '../components';
-import { PostsWrapper, EachPostWrapper,
-        H1, P } from '../styles';
-import { GrGatsbyjs } from "react-icons/gr";
+import { Layout,
+    Pagination } from '../components';
+import { StyledLink,
+    HeroImageWrapper, 
+    PostsWrapper, EachPostWrapper,
+    H1, H2, P } from '../styles';
 
-const allPosts = ({pageContext, data}) => {
-    const {currentPage, totalNumOfPages} = pageContext;
+const allPosts = ({ pageContext, data }) => {
+    const { currentPage, totalNumOfPages } = pageContext;
     const isFirst = currentPage === 1;
     const isLast = currentPage === totalNumOfPages;
-    const prevPage = currentPage - 1 === 1? "/" : `/${currentPage - 1}`  
-    const nextPage = `/${currentPage + 1}`
+    const prevPage = currentPage - 1 === 1 ? "/posts/" : `/posts/${currentPage - 1}`
+    const nextPage = `/posts/${currentPage + 1}`
     const postNodes = data.allMdx.nodes
-    
 
     return (
         <Layout>
-            <StaticImage
-                alt="Hero Image"
-                scr="../images/heroImage.jpg"/>
+            <HeroImageWrapper>
+                <StaticImage
+                    alt="Hero Image"
+                    src="../images/heroImage.jpg" />
+            </HeroImageWrapper>
             <PostsWrapper>
-                <H1 textAlign="center" margin="1rem 0 2rem 0">
-                    $Blog/Developer/Wontae
-                </H1>
-                <P textAlign="center" color='dark2'>
-                    This blog is 🔨made⚡ with Gatsby
-                    {'\u00A0'}<GrGatsbyjs size="1.125rem" color="#633194"/>{'\u00A0'}
-                    <br/>
-                    at <span style={{fontStyle: 'italic'}}>'$HOME/Wontae_Room'</span>{'\u00A0'}😄
-                </P>
-                {postNodes.map( postNode => (
+                {postNodes.map(postNode => (
                     <EachPostWrapper key={postNode.id}>
                         <H2>
                             <StyledLink to={`/posts/${postNode.frontmatter.slug}`}>
-                            {postNode.frontmatter.title}
+                                {postNode.frontmatter.title}
                             </StyledLink>
                         </H2>
                         <P color="dark2">{postNode.frontmatter.excerpt}</P>
@@ -44,10 +37,10 @@ const allPosts = ({pageContext, data}) => {
                 ))}
             </PostsWrapper>
             <Pagination
-            isFirst={isFirst}
-            isLast={isLast}
-            prevPage={prevPage}
-            nextPage={nextPage}
+                isFirst={isFirst}
+                isLast={isLast}
+                prevPage={prevPage}
+                nextPage={nextPage}
             />
         </Layout>
     )
