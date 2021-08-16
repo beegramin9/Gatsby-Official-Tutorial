@@ -18,3 +18,5 @@ export * from "./PostsStyle";
 // Blog Content
 export * from "./ContentStyle";
 
+// Pagination Style
+export * from "./PaginationStyle";
