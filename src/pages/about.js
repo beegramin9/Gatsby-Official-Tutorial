@@ -17,7 +17,7 @@ const AboutPage = () => {
                 <StaticImage src='../images/pages/aboutImage.jpg' alt="About Image"/>
             </HeroImageWrapper>
             <ContentWrapper>
-                <H1 textAlign="center" margin="1rem 0 2rem 0">
+                <H1 textAlign="center" margin="0 0 2rem 0">
                     $Blog/Developer/Wontae
                 </H1>
                 <P textAlign="center" color='dark2'>

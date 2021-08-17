@@ -9,7 +9,7 @@ export const PostsWrapper = styled.main`
 
     background-color: ${props => props.theme.colors.light2};
     padding: ${props => 
-    `${props.theme.spacings.Large} ${props.theme.spacings.xxLarge}`};
+    `${props.theme.spacings.medium} ${props.theme.spacings.large}`};
     box-shadow: ${props => props.theme.shadows.shadow1};
     border-radius: 5px;
     position: relative;
@@ -17,7 +17,7 @@ export const PostsWrapper = styled.main`
     
     @media ${props => props.theme.breakpoints.tablet} {
         padding: ${props => 
-        `${props.theme.spacings.small} ${props.theme.spacings.medium}`};
+        `${props.theme.spacings.xSmall} ${props.theme.spacings.small}`};
     }
     @media ${props => props.theme.breakpoints.mobile} {
         padding: ${props => 

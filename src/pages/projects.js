@@ -1,5 +1,4 @@
 import React from 'react';
-import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import { Layout, Projects } from '../components';
 import { HeroImageWrapper, ContentWrapper } from "../styles";

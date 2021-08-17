@@ -7,7 +7,6 @@ import { HeroImageWrapper, ContentWrapper,
 import { Layout } from '../components';
 
 const singlePost = ({ data }) => {
-    console.log('single page data:', data);
     const image = getImage(data.mdx.frontmatter.hero_image);
     return (
         <Layout>
@@ -17,8 +16,8 @@ const singlePost = ({ data }) => {
                 alt={data.mdx.frontmatter.hero_image_alt}/>
             </HeroImageWrapper>
             <ContentWrapper>
-                <H1 margin="0 0 2rem 0">{data.mdx.frontmatter.title}</H1>
-                <P>{data.mdx.frontmatter.date}</P>
+                <H1 textAlign="center" margin="0 0 2rem 0">{data.mdx.frontmatter.title}</H1>
+                <P textAlign="center" margin="0 0 1rem 0">{data.mdx.frontmatter.date}</P>
                 <MDXRenderer>{data.mdx.body}</MDXRenderer>
             </ContentWrapper>
         </Layout>
