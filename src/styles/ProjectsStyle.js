@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
 export const ProjectsWrapper = styled.section`
+    color: none;
+    background-color: none;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    padding: 3rem;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
     place-items: center;
-    column-gap: 2rem;
-    row-gap: 3rem;
+    gap: 2rem;
     @media ${(props) => props.theme.breakpoints.tablet} {
         display: flex;
         flex-direction: column;
@@ -20,9 +20,11 @@ export const ProjectCard = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    gap: 1rem 0;
+    padding: 1rem .5rem;
 
     /* image */
-    img {
+    & img {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         width:100%;
@@ -36,62 +38,65 @@ export const ProjectCard = styled.div`
     }
 
     /* title */
-    h3 {
-        color: #9cc9e3;
-        padding: .5rem 0;
+    & h3 {
+        color: ${(props) => props.theme.colors.buttonpurple};
         letter-spacing: 2px;
         font-weight: 500;
-        font-size: 3rem;
+        font-size: 1.5rem;
     }
 
     /* line */
-    hr {
+    & hr {
+        margin: 5px auto;
         width: 50px;
         height: 3px;
-        margin: 1rem auto;
-        border: 0;
-        background: #d0bb57;
+        border: none;
+        color: ${(props) => props.theme.colors.orangeyellow};    /* IE */
+        border-color: ${(props) => props.theme.colors.orangeyellow};  /* 사파리 */
+        background-color: ${(props) => props.theme.colors.orangeyellow};  /* 크롬, 모질라 등, 기타 브라우저 */
     }
     /* description */
-    p {
+    & p {
         width: 100%;
-        height: 19.5em;
-        padding: 0 5rem 1rem;
+        height: 17.5em;
+        padding: 0 2.5rem;
         color: ${props => props.theme.colors.dark3}; /* Dark mode: #e4e6e7  */
         font-style: 2rem;
         line-height: 24px;
     }
 `;
 
-export const ProjectLinks = styled.ul`
-    list-style-type: none;
+export const ProjectLinks = styled.div`
     display: flex;
-    justify-content: space-evenly;
-    margin: 1.5rem 0 1.5rem 0;
-    padding: 0 0 1.5rem 0;
+    justify-content: space-between;
+    gap: 0 2rem;
 
-    a {
+    & a {
         position: relative;
+        text-decoration: none;
         z-index: 5;
-        color:#d4c0c0;
-        font-size: 1.6rem;
-        padding:1rem 1.5rem;
-        background: ${(props) => props.theme.colors.redbrown};
+        color: ${(props) => props.theme.colors.light2};
+        font-size: 1rem;
+        padding: .5rem .75rem;
+        background-color: ${(props) => props.theme.colors.violet};
         border-radius: 15px;
         transition: 0.5s;
         &:hover{
-            background: ${(props) => props.theme.colors.red};
+            background-color: ${(props) => props.theme.colors.buttonpurple};
         }
     }
 `;
 
-export const TagCards = styled.ul`
+export const TagCards = styled.div`
     display: flex;
-    justify-content: space-around;
-    margin: 1.5rem 0;
+    justify-content: space-between;
+    gap: 0 1rem;
 
-    img {
-        font-size: 1rem;
+    & img {
+        width: 100%;
+        height: 20px;
+        border-radius: 0px;
+        font-size: 10px;
         &:hover {
             transition: transform 100s ease-in-out;
             transform: scale(0.98);
