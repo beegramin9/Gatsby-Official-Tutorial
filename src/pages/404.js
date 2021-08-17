@@ -23,6 +23,6 @@ const NotFoundPage = () => {
     </Layout>
   )
 }
-{/* <Link to="/">Go home</Link> */}
+// <Link to="/">Go home</Link>
 
 export default NotFoundPage

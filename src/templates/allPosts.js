@@ -6,7 +6,7 @@ import { Layout,
 import { StyledLink,
     HeroImageWrapper, 
     PostsWrapper, EachPostWrapper,
-    H1, H2, P } from '../styles';
+    H2, P } from '../styles';
 
 const allPosts = ({ pageContext, data }) => {
     const { currentPage, totalNumOfPages } = pageContext;
@@ -21,7 +21,7 @@ const allPosts = ({ pageContext, data }) => {
             <HeroImageWrapper>
                 <StaticImage
                     alt="Hero Image"
-                    src="../images/heroImage.jpg" />
+                    src="../images/pages/heroImage.jpg" />
             </HeroImageWrapper>
             <PostsWrapper>
                 {postNodes.map(postNode => (

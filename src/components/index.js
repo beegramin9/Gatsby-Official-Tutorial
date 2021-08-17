@@ -11,3 +11,6 @@ export * from './Pagination';
 
 // Button
 export * from './Button';
+
+// Projects
+export * from './Projects';

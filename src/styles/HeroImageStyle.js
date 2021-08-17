@@ -1,11 +1,9 @@
 import styled from 'styled-components';
 
 export const HeroImageWrapper = styled.div`
-    grid-column: 3 / span 10;
+    grid-column: 3 / span 12;
     grid-row: 2 / 6;
-    max-width: 960px;
     max-height: 640px;
-    
     overflow: hidden;
     position: relative; /* Image에 absolute position을 주기 위해서 */
     box-shadow: ${props => props.theme.shadows.shadow1};

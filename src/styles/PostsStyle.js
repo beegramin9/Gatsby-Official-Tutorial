@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const PostsWrapper = styled.main`
-    grid-column: 4 / span 8;
+    grid-column: 4 / span 10;
     grid-row: 5 / span 5;
     display: flex;
     flex-direction: column;

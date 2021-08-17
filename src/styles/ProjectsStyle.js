@@ -1,0 +1,101 @@
+import styled from 'styled-components';
+
+export const ProjectsWrapper = styled.section`
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    padding: 3rem;
+    place-items: center;
+    column-gap: 2rem;
+    row-gap: 3rem;
+    @media ${(props) => props.theme.breakpoints.tablet} {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+}
+`
+export const ProjectCard = styled.div`
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    /* image */
+    img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        width:100%;
+        height:185px;
+        object-fit: cover;
+        &:hover {
+            transition: transform 500ms ease-in-out;
+            transform: scale(1.1);
+            opacity: 1.5;
+        }
+    }
+
+    /* title */
+    h3 {
+        color: #9cc9e3;
+        padding: .5rem 0;
+        letter-spacing: 2px;
+        font-weight: 500;
+        font-size: 3rem;
+    }
+
+    /* line */
+    hr {
+        width: 50px;
+        height: 3px;
+        margin: 1rem auto;
+        border: 0;
+        background: #d0bb57;
+    }
+    /* description */
+    p {
+        width: 100%;
+        height: 19.5em;
+        padding: 0 5rem 1rem;
+        color: ${props => props.theme.colors.dark3}; /* Dark mode: #e4e6e7  */
+        font-style: 2rem;
+        line-height: 24px;
+    }
+`;
+
+export const ProjectLinks = styled.ul`
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1.5rem 0 1.5rem 0;
+    padding: 0 0 1.5rem 0;
+
+    a {
+        position: relative;
+        z-index: 5;
+        color:#d4c0c0;
+        font-size: 1.6rem;
+        padding:1rem 1.5rem;
+        background: ${(props) => props.theme.colors.redbrown};
+        border-radius: 15px;
+        transition: 0.5s;
+        &:hover{
+            background: ${(props) => props.theme.colors.red};
+        }
+    }
+`;
+
+export const TagCards = styled.ul`
+    display: flex;
+    justify-content: space-around;
+    margin: 1.5rem 0;
+
+    img {
+        font-size: 1rem;
+        &:hover {
+            transition: transform 100s ease-in-out;
+            transform: scale(0.98);
+            opacity: 0.9;
+        }
+    }
+`
