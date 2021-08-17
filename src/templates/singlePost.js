@@ -7,6 +7,7 @@ import { HeroImageWrapper, ContentWrapper,
 import { Layout } from '../components';
 
 const singlePost = ({ data }) => {
+    console.log('single page data:', data);
     const image = getImage(data.mdx.frontmatter.hero_image);
     return (
         <Layout>

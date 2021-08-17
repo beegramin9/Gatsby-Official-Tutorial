@@ -24,6 +24,14 @@ module.exports = {
         path: `${__dirname}/posts`
       }
     },
+    /* graphQL data layer에 폴더 추가하는 방법 
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `projectgifs`,
+        path: `${__dirname}/projectgifs`,
+      },
+    }, */
     "gatsby-plugin-mdx",
     // GraphQL data layer에 allMdx, mdx field 추가
     // MDXRenderer Component 사용가능

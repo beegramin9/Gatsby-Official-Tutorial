@@ -1,18 +1,15 @@
 import React from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
 import { ProjectsWrapper, ProjectCard, ProjectLinks, TagCards } from "../styles";
 import { arrayOfProject } from '../constants/constants';
 
 
+
 export const Projects = () => {
-    console.log(arrayOfProject.map( ({image} ) => console.log(image) ));
     return (
         <ProjectsWrapper>
             {arrayOfProject.map(({ id, title, description, image, tags, link, github }) => (
                 <ProjectCard key={id}>
-                <div style={{overflow:'hidden'}}>
-                    <StaticImage src={image} alt={title}/>
-                </div>
+                <img src={image} alt={title}/>
                 <h3>{title}</h3>
                 <hr/>
                 <TagCards>
@@ -23,7 +20,9 @@ export const Projects = () => {
                         //! 그냥 img태그를 사용한다
                     ))}
                 </TagCards>
-                <p>{'\u00A0'}{description}</p>
+                <p>{'\u00A0'}{description.split('\n').map( (line, index) => {
+                    return (<span key={index}>{line}<br/>&nbsp;</span>)
+                })}</p>
                 <ProjectLinks>
                     <a href={link}>Link</a>
                     <a href={github}>Github</a>
@@ -33,5 +32,3 @@ export const Projects = () => {
         </ProjectsWrapper>
     )
 }
-
-// 여기서도 GraphQL로 이미지 데이터를 받아와야하는거야?

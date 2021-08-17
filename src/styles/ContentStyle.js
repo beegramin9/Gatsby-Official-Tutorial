@@ -5,7 +5,7 @@ export const ContentWrapper = styled.main`
     grid-row: 5 / span 5;
     background-color: ${props => props.theme.colors.light2};
     padding: ${props => 
-    `${props.theme.spacings.large} ${props.theme.spacings.xLarge}`};
+    `${props.theme.spacings.medium} ${props.theme.spacings.large}`};
     box-shadow: ${props => props.theme.shadows.shadow1};
     border-radius: 5px;
     position: relative;
@@ -13,12 +13,12 @@ export const ContentWrapper = styled.main`
     @media ${props => props.theme.breakpoints.tablet} {
         grid-row: 4 / span 5;
         padding: ${props => 
-        `${props.theme.spacings.medium} ${props.theme.spacings.large}`};
+        `${props.theme.spacings.xSmall} ${props.theme.spacings.small}`};
     }
     @media ${props => props.theme.breakpoints.mobile} {
         grid-row: 3 / span 4;
         padding: ${props => 
-        `${props.theme.spacings.small} ${props.theme.spacings.medium}`};
+        `${props.theme.spacings.xxSmall} ${props.theme.spacings.xSmall}`};
     }
     //* Single Page의 MDX HTML Tag를 위한 디자인
     h1,h2,h3,h4,h5,h6 {
