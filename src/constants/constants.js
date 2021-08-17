@@ -1,6 +1,6 @@
 //* Gatsby에서 Gif를 다루는 방법...
 // https://www.gatsbyjs.com/docs/how-to/images-and-media/working-with-gifs/
-import Blog from '../images/projects/Blog.gif';
+
 import Movieapp from '../images/projects/Movieapp.gif';
 import Paintbrush from '../images/projects/Paintbrush.gif';
 import Pizza from '../images/projects/Pizza.gif';
@@ -9,17 +9,6 @@ import Calculator from '../images/projects/Calculator.gif';
 
 
 export const arrayOfProject = [
-    /* {
-        title: 'Gatsby Dev Blog',
-        description: "I could not deny how much of a great help it has been from many other's dev Blogs. So I decided to make my own. \nThis blog is made with Gatsby and gets access to data through GraphQL. No, I did not just decide to use premaid-blog providing services like devDojo, I wanted make mine on my own! \nThe contents always see to be updated in real time, and you can always come over to check out 😊",
-        image: Blog,
-        tags: ['https://img.shields.io/badge/Gatsby-663399?style=flat-square&logo=Gatsby&logoColor=white',
-        'https://img.shields.io/badge/GraphQL-d90f80?style=flat-square&logo=GraphQL&logoColor=white', 
-        'https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white'],
-        link: 'https://www.google.com/',
-        readme: 'https://github.com/beegramin9/Gatsby-Skillthrive-Blog',
-        id: 0,
-    }, */
     {
         title: 'Movie Archive Webapp',
         description: "This project works on a movie list api, added with custom responsive design.\nThere are many reusable features such as custom Axios&pagination Hook, styled components, routers and loading spinner.",

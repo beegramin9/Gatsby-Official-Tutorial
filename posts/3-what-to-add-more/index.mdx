@@ -11,7 +11,19 @@ excerpt: Headless Wordpress - 태그, 검색 기능이랑 더 추가할게 뭐�
 
 ![furniture](./furniture.jpg)
 
-```js
-const a = 1;
-console.log("hello");
+이거 왜 안되는지 설명좀 해주라...
+
+```javascript
+function initializeDatabase(database) {
+  switch (database.type) {
+    case mysql:
+      database.connectToMySql();
+      break;
+    default:
+      database.connectToPostgres();
+      break;
+  }
+}
 ```
+
+하라는 대로 다 했고 무려 공식문서 따라했는데 안되노 ㅅㅂ..
