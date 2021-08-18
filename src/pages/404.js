@@ -23,6 +23,7 @@ const NotFoundPage = () => {
     </Layout>
   )
 }
+/* 뒤로가기 */
 // <Link to="/">Go home</Link>
 
 export default NotFoundPage

@@ -18,4 +18,9 @@ export const ButtonWrapper = styled(props => <Link {...props}/>)`
     &:focus {
         filter: brightness(110%)
     }
+
+    a {
+        color: ${props => props.theme.colors.light1};
+        text-decoration: none;
+    }
 `

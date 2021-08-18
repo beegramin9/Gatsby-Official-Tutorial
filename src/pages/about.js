@@ -4,7 +4,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 import { HeroImageWrapper, ContentWrapper,
         H1, P } from "../styles";
 import { GrGatsbyjs } from "react-icons/gr";
-
+import Resume from "../downloads/resume.pdf";
 
 const AboutPage = () => {
     /* 이력서 다운로드
@@ -26,7 +26,11 @@ const AboutPage = () => {
                     <br />
                     at <span style={{ fontStyle: 'italic' }}>'$HOME/Wontae_Room'</span>{'\u00A0'}😄
                 </P>
-                <Button to="/projects">Download Resume</Button>
+                <Button>
+                    <a href={Resume} download="resume-WontaeChoi.pdf">
+                        Download Resume
+                    </a>
+                </Button>
             </ContentWrapper>
         </Layout>
     )
