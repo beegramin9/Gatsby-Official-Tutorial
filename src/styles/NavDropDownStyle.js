@@ -5,7 +5,7 @@ export const StyledBurger = styled.div`
     height: 2rem;
     position: fixed;
     top: 41px;
-    right: 20px;
+    right: 40px;
     z-index: 15;
     display: none;
     @media ${(props) => props.theme.breakpoints.mobile} {
@@ -43,7 +43,7 @@ export const RightNav = styled.div`
     z-index: 19;
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(200px)'};
     top: 85px;
-    right: 25px;
+    right: 45px;
     transition: transform 0.3s ease-in-out;
     gap: 1.5rem
     }
