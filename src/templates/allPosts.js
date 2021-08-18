@@ -4,8 +4,8 @@ import { StaticImage } from 'gatsby-plugin-image';
 import { Layout,
     Pagination } from '../components';
 import { StyledLink,
-    HeroImageWrapper, 
-    PostsWrapper, EachPostWrapper,
+    HeroImageWrapper, ContentWrapper, 
+    EachPostWrapper,
     H2, P } from '../styles';
 
 const allPosts = ({ pageContext, data }) => {
@@ -21,9 +21,9 @@ const allPosts = ({ pageContext, data }) => {
             <HeroImageWrapper>
                 <StaticImage
                     alt="Hero Image"
-                    src="../images/pages/heroImage.jpg" />
+                    src="../images/pages/postsImage.jpg" />
             </HeroImageWrapper>
-            <PostsWrapper>
+            <ContentWrapper posts>
                 {postNodes.map(postNode => (
                     <EachPostWrapper key={postNode.id}>
                         <H2>
@@ -35,7 +35,7 @@ const allPosts = ({ pageContext, data }) => {
                         <P color="dark3">Posted: {postNode.frontmatter.date}</P>
                     </EachPostWrapper>
                 ))}
-            </PostsWrapper>
+            </ContentWrapper>
             <Pagination
                 isFirst={isFirst}
                 isLast={isLast}

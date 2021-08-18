@@ -44,13 +44,13 @@ export const Layout = ({children}) => {
     // console.log('isRoot:',isRoot)
 
     return (
-        <LayoutWrapper>
-            <ThemeProvider theme={theme}>
+        <ThemeProvider theme={theme}>
+            <LayoutWrapper>
                 <GlobalStyle/>
                 <Header/>
                 {children}
                 <Footer/>
-            </ThemeProvider>
-        </LayoutWrapper>
+            </LayoutWrapper>
+        </ThemeProvider>
     )
 }

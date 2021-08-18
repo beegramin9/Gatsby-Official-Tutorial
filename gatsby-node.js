@@ -22,7 +22,7 @@ exports.createPages = async ({ actions, graphql }) => {
         }
     `)
     //* Create paginated pages for posts
-    const postPerPage = 3;
+    const postPerPage = 5;
     const totalNumOfPages = Math.ceil(data.allMdx.edges.length / postPerPage)
     Array.from({ length: totalNumOfPages }).forEach((_, pageIndex) => {
         actions.createPage({

@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
 export const FooterWrapper = styled.footer`
+    position: relative;
+    top: -50px;
+
     grid-column: 2 / span 14 ;
     min-height: 11.25rem;
     padding: 3rem 0;

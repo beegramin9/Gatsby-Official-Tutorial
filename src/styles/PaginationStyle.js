@@ -3,8 +3,10 @@ import styled from 'styled-components';
 import { Link } from 'gatsby';
 
 export const PaginationWrapper = styled.div`
+    position: relative;
+    top: -50px;
+
     grid-column: 2 / span 14;
-    grid-row: 10 / span 2;
     padding: 3rem 0;
     display: flex;
     align-items: center;

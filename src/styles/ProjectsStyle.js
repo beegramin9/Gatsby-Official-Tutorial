@@ -4,7 +4,6 @@ export const ProjectsWrapper = styled.section`
     color: none;
     background-color: none;
     display: grid;
-    /* grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); */
     grid-template-columns: 1fr 1fr;
     place-items: center;
     gap: 2rem;

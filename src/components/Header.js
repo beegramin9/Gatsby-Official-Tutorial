@@ -7,13 +7,6 @@ import { HeaderWrapper, BlogNameWrapper } from '../styles';
 
 export const Header = () => {
     
-
-    /* 
-    <HeaderWrapper>
-        
-    </HeaderWrapper>
-    
-    */
     return (
         <HeaderWrapper>
             <BlogNameWrapper>
