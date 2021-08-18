@@ -6,7 +6,7 @@ export const StyledBurger = styled.div`
     position: fixed;
     top: 41px;
     right: 20px;
-    z-index: 20;
+    z-index: 15;
     display: none;
     @media ${(props) => props.theme.breakpoints.mobile} {
         display: flex;
@@ -45,10 +45,50 @@ export const RightNav = styled.div`
     top: 85px;
     right: 25px;
     transition: transform 0.3s ease-in-out;
-    gap: 1rem
+    gap: 1.5rem
     }
 
     img {
         height: 30px;
     }
 `;
+
+export const RightNavIcon = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+
+    &:hover span {
+        opacity: 1;
+        pointer-events: auto;
+        top: -40px;
+    }
+`
+
+export const Tooltip = styled.span`
+    color: ${props => props.theme.colors.light1};
+    background-color: ${props => props.backgroundColor};
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+    padding: 7px;
+    border-radius: 25px;
+    position: absolute;
+    z-index: 25;
+    top: 0px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    &:before{
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: ${props => props.backgroundColor};
+        bottom: -4px;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+    }
+`
