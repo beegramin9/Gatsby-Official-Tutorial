@@ -1,6 +1,7 @@
 import React from "react";
 import { createGlobalStyle, ThemeProvider } from "styled-components"
 import theme from '../themes/theme';
+// import { withPrefix } from "gatsby";
 // import { Link, useStaticQuery, graphql } from 'gatsby'; 
 import { Header, Footer } from "../components";
 import { LayoutWrapper } from "../styles";
@@ -37,6 +38,10 @@ export const Layout = ({children}) => {
             }
         }
     `) */
+    
+    //! Root Redirection
+    // const isRoot = location.pathname === withPrefix('/');
+    // console.log('isRoot:',isRoot)
 
     return (
         <LayoutWrapper>

@@ -3,12 +3,10 @@ import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import { Layout, Button } from '../components';
 import { HeroImageWrapper, ContentWrapper, H1 } from "../styles";
-// import { Link } from "gatsby";
-
-
 
 // markup
-const NotFoundPage = () => {
+const NotFoundPage = (props) => {
+  console.log(props)
   return (
     <Layout>
       <HeroImageWrapper>
@@ -18,12 +16,14 @@ const NotFoundPage = () => {
         <H1 textAlign="center" margin="0 0 1rem 0">
           Uh-oh... What you're looking for couldn't be found😑
         </H1>
-        <Button to="/projects">Back</Button>
+        <Button>
+          <span onClick={() => window.history.back()}>
+            Back
+          </span>
+        </Button>
       </ContentWrapper>
     </Layout>
   )
 }
-/* 뒤로가기 */
-// <Link to="/">Go home</Link>
 
 export default NotFoundPage

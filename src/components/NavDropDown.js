@@ -18,9 +18,9 @@ export const NavDropDown = () => {
             </StyledBurger>
             <RightNav open={open}>
                 <RightNavIcon>
-                    <Tooltip backgroundColor="#036ca3">About</Tooltip> 
-                    <StyledLink to="/about">
-                        <StaticImage src="../images/header/about.svg" alt="About"/> 
+                    <Tooltip backgroundColor="#fe4e18">Home</Tooltip> 
+                    <StyledLink to="/">
+                        <StaticImage src="../images/header/home.svg" alt="About"/> 
                     </StyledLink>
                 </RightNavIcon>
                 <RightNavIcon>

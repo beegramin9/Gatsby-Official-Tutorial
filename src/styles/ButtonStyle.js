@@ -1,8 +1,6 @@
-import React from "react";
 import styled from "styled-components";
-import { Link } from "gatsby";
 
-export const ButtonWrapper = styled(props => <Link {...props}/>)`
+export const ButtonWrapper = styled.div`
     margin-top: 1rem;
     padding: .5rem .75rem;
     background-color: ${props => props.theme.colors.main1};

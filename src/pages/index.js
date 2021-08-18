@@ -6,10 +6,7 @@ import { HeroImageWrapper, ContentWrapper,
 import { GrGatsbyjs } from "react-icons/gr";
 import Resume from "../downloads/resume.pdf";
 
-const AboutPage = () => {
-    /* 이력서 다운로드
-    https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-link/
-    File Downloads */
+const IndexPage = () => {
 
     return (
         <Layout>
@@ -36,4 +33,4 @@ const AboutPage = () => {
     )
 }
 
-export default AboutPage;
+export default IndexPage;
