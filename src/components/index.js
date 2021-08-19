@@ -14,3 +14,6 @@ export * from './Button';
 
 // Projects
 export * from './Projects';
+
+// Projects
+export * from './Seo';

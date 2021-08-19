@@ -21,7 +21,7 @@ const IndexPage = () => {
     return (
         <Layout>
             <HeroImageWrapper>
-                <StaticImage src='../images/pages/aboutImage.jpg' alt="About Image"/>
+                <StaticImage src='../images/pages/indexImage.jpg' alt="Index Image"/>
             </HeroImageWrapper>
             <ContentWrapper>
                 <H1 textAlign="center" margin="0 0 2rem 0">

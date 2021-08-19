@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import { Layout,
+import { Layout, Seo,
     Pagination } from '../components';
 import { StyledLink,
     HeroImageWrapper, ContentWrapper, 
@@ -16,8 +16,11 @@ const allPosts = ({ pageContext, data }) => {
     const nextPage = `/posts/${currentPage + 1}`
     const postNodes = data.allMdx.nodes
 
+    //* Allpost에서는 heroImage도 static이고 따로 중요한 데이터가 없으니
+    // seo default값을 사용한다
     return (
         <Layout>
+            <Seo/>
             <HeroImageWrapper>
                 <StaticImage
                     alt="Hero Image"

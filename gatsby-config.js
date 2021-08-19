@@ -1,7 +1,10 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "Gatsby-OfficialTutorial",
+    title: "Wontae\'s Dev Blog",
+    description: "A simple blog built with Gatsby and MDX",
+    image: '/pages/indexImage.jpg',
+    author: "WontaeChoi",
+    url: 'https://wontaechoi.tech',
   },
   plugins: [
     "gatsby-plugin-gatsby-cloud",
@@ -50,6 +53,7 @@ module.exports = {
       },
     },
     "gatsby-plugin-styled-components",
+    `gatsby-plugin-react-helmet`,
   ],
 };
 // transform plugin은 다른 타입의 nodes를 필요한 타입의 nodes로 변환한다
