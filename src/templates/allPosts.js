@@ -6,7 +6,7 @@ import { Layout, Seo,
 import { StyledLink,
     HeroImageWrapper, ContentWrapper, 
     EachPostWrapper,
-    H2, P } from '../styles';
+    H1, H2, P } from '../styles';
 
 const allPosts = ({ pageContext, data }) => {
     const { currentPage, totalNumOfPages } = pageContext;
@@ -26,7 +26,8 @@ const allPosts = ({ pageContext, data }) => {
                     alt="Hero Image"
                     src="../images/pages/postsImage.jpg" />
             </HeroImageWrapper>
-            <ContentWrapper posts>
+            <ContentWrapper>
+                <H1 textAlign="center" textShadow="3px 3px 0px rgba(0,0,0,0.2)" margin="0 0 1rem">Blog Posts</H1>
                 {postNodes.map(postNode => (
                     <EachPostWrapper key={postNode.id}>
                         <H2>

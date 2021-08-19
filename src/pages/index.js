@@ -24,9 +24,11 @@ const IndexPage = () => {
                 <StaticImage src='../images/pages/indexImage.jpg' alt="Index Image"/>
             </HeroImageWrapper>
             <ContentWrapper>
-                <H1 textAlign="center" margin="0 0 2rem 0">
-                    $Blog/Developer/Wontae
+                <H1 textAlign="center" textShadow="3px 3px 0px rgba(0,0,0,0.2)" margin="0 0 1rem" >
+                    {/* $Blog/Developer/Wontae */}
+                    Hi there! Glad you are here 😄
                 </H1>
+                <P>Ask Me Anything!</P>
                 <P textAlign="center" color='dark2'>
                     This blog is 
                     <motion.span

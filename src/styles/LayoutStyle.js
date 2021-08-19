@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 //! Transition Link
+//* Styled Component + Framer Motion
 export const LayoutWrapper = styled(motion.div)`
     position: relative;
     height: 100%;

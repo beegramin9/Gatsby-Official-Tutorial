@@ -29,6 +29,7 @@ export const H1 = styled.h1`
     font-weight: 400;
     text-align: ${props => props.textAlign ? props.textAlign : 'none' };
     margin: ${props => props.margin? props.margin : 0};
+    text-shadow: ${props => props.textShadow};
 `
 
 export const H2 = styled.h2`

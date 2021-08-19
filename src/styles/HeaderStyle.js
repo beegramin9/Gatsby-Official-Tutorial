@@ -30,8 +30,8 @@ export const BlogNameWrapper = styled.div`
         -ms-text-fill-color: transparent;
         -moz-background-clip: text;
         -moz-text-fill-color: transparent;
-        font-size: 40;
         text-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+        font-size: 40;
         letter-spacing: 2px;
     }
 `

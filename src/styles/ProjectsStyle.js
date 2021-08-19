@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const ProjectsWrapper = styled.section`
+    margin-top: 2rem;
     color: none;
     background-color: none;
     display: grid;
