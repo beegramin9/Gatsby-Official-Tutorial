@@ -1,6 +1,8 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const LayoutWrapper = styled.div`
+//! Transition Link
+export const LayoutWrapper = styled(motion.div)`
     position: relative;
     height: 100%;
     display: grid;

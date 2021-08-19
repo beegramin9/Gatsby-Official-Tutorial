@@ -22,30 +22,31 @@ const GlobalStyle = createGlobalStyle`
     }
 `
 
+const transitionLinkVariants = {
+    hidden: { 
+        opacity: 0, 
+        x: '100vw' 
+    },
+    visible: { 
+        opacity: 1, 
+        x: 0,
+        transition: { duration: .4 }
+    },
+    exit: {
+        x: "-100vh",
+        transition: { ease: 'cubic-bezier(0.68, -0.55, 0.265, 1.55)' }
+    }
+};
 
-//* useStaticQuery로 graphQl에서 데이터를 얻어온다.
-//* graphql은 pass되는 tamplete literal을 graphQL query라고 정의한다.
 export const Layout = ({children}) => {
-    //* building-block component에 graphQl로 끌어온 데이터를 추가하는 법
-    //todo building-block page Component 안에 새로운 query 변수를 추가한다
-    // page component 방식과 다르다
-    /* const data = useStaticQuery(graphql`
-        query {
-            site {
-                siteMetadata {
-                    title
-                }
-            }
-        }
-    `) */
-    
-    //! Root Redirection
-    // const isRoot = location.pathname === withPrefix('/');
-    // console.log('isRoot:',isRoot)
-
     return (
         <ThemeProvider theme={theme}>
-            <LayoutWrapper>
+            <LayoutWrapper
+                variants={transitionLinkVariants}
+                initial="hidden"
+                animate="visible"
+                exit="exit"
+            >
                 <GlobalStyle/>
                 <Header/>
                 {children}

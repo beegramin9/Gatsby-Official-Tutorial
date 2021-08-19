@@ -50,6 +50,10 @@ Seo.defaultProps = {
     article: false,
 }
 
+//* building-block component에 graphQl로 끌어온 데이터를 추가하는 법
+// useStaticQuery로 graphQl에서 데이터를 얻어온다.
+// graphql은 pass되는 tamplete literal을 graphQL query라고 정의한다.
+//todo building-block page Component 안에 새로운 query 변수를 추가한다
 const seoQuery = graphql`
     query SEOQuery {
         site {
