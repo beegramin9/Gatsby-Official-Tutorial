@@ -1,7 +1,7 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import { Layout, Projects } from '../components';
-import { HeroImageWrapper, ContentWrapper, H1, P } from "../styles";
+import { HeroImageWrapper, ContentWrapper, H1} from "../styles";
 
 const projectsPage = ( ) => {
   return (
