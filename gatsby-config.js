@@ -54,6 +54,23 @@ module.exports = {
     },
     "gatsby-plugin-styled-components",
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+              inlineCodeMarker: null,
+              aliases: {},
+              showLineNumbers: false,
+              noInlineHighlight: false,
+            },
+          },
+        ],
+      },
+    },
   ],
 };
 // transform plugin은 다른 타입의 nodes를 필요한 타입의 nodes로 변환한다
