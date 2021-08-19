@@ -27,7 +27,7 @@ const allPosts = ({ pageContext, data }) => {
                     src="../images/pages/postsImage.jpg" />
             </HeroImageWrapper>
             <ContentWrapper>
-                <H1 textAlign="center" textShadow="3px 3px 0px rgba(0,0,0,0.2)" margin="0 0 1rem">Blog Posts</H1>
+                <H1 textAlign="center" textShadow="3px 3px 0px rgba(0,0,0,0.2)" margin="0 0 2rem">Blog Posts</H1>
                 {postNodes.map(postNode => (
                     <EachPostWrapper key={postNode.id}>
                         <H2>

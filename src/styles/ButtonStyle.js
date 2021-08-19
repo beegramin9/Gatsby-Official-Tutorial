@@ -1,9 +1,11 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const ButtonWrapper = styled.div`
+export const ButtonWrapper = styled(motion.button)`
     margin-top: 1rem;
     padding: .5rem .75rem;
     background-color: ${props => props.theme.colors.main1};
+    border: none;
     border-radius: .5rem;
     color: ${props => props.theme.colors.light1};
     font-weight: 700;

@@ -26,3 +26,6 @@ export * from "./ButtonStyle";
 
 // Projects Style
 export * from "./ProjectsStyle";
+
+// Introduction Style
+export * from "./IntroductionStyle";

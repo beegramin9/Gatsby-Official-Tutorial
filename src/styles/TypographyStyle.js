@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 const fontSizes = { medium: "1.125rem", small: "1rem", 
                     xSmall: "0.875rem", default: "1.125rem"}
-const lineHeight = { medium: "1.4375rem", small: "1.375rem", 
+const lineHeights = { medium: "1.4375rem", small: "1.375rem", 
                     xSmall: "1.125rem", default: "1.4375rem"}
 
 export const P = styled.p`
     margin: ${props => props.margin? props.margin : 0};
-    font-size : ${props => fontSizes[props.size] || fontSizes['default']};
-    line-height: ${props => lineHeight[props.size] || lineHeight['default']};;
+    font-size : ${props => fontSizes[props.fontSize] || fontSizes['default']};
+    line-height: ${props => lineHeights[props.lineHeight] || lineHeights['default']};;
     text-decoration: ${props => props.textDecoration ? props.textDecoration : "none"};
     //* gatsby-config에서 400, 700이란 특정 값을 import했기 때문에 사용가능
     font-weight: ${props => props.bold ? 700 : 400 };

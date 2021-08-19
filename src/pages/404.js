@@ -16,11 +16,13 @@ const NotFoundPage = (props) => {
         <H1 textAlign="center" margin="0 0 1rem 0">
           Uh-oh... What you're looking for couldn't be found😑
         </H1>
-        <Button>
-          <span onClick={() => window.history.back()}>
-            Back
-          </span>
-        </Button>
+        <div style={{display:'flex', justifyContent:"center"}}>
+          <Button>
+            <span onClick={() => window.history.back()}>
+              Back
+            </span>
+          </Button>
+        </div>
       </ContentWrapper>
     </Layout>
   )

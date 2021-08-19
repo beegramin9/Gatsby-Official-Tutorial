@@ -10,7 +10,7 @@ const projectsPage = ( ) => {
         <StaticImage src='../images/pages/projectsImage.jpg' alt="Hero Image"/>
       </HeroImageWrapper>
       <ContentWrapper>
-        <H1 textAlign="center" textShadow="3px 3px 0px rgba(0,0,0,0.2)" margin="0 0 1rem">Projects</H1>
+        <H1 textAlign="center" textShadow="3px 3px 0px rgba(0,0,0,0.2)" margin="0 0 2rem">Projects</H1>
         <Projects/>
       </ContentWrapper>
     </Layout>
