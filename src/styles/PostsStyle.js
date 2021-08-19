@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const EachPostWrapper = styled.article`
-    padding-bottom: 2rem;
+    margin-bottom: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;

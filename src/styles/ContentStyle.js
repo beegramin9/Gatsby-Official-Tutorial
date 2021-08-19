@@ -19,8 +19,10 @@ export const ContentWrapper = styled.main`
         padding: ${props => 
         `${props.theme.spacings.xxSmall} ${props.theme.spacings.xSmall}`};
     }
-
-    //* Single Page의 MDX HTML Tag를 위한 디자인
+`
+// 이거때문에 hr이 안먹힌거야... 싀댕
+/* 
+//* Single Page의 MDX HTML Tag를 위한 디자인
     h1,h2,h3,h4,h5,h6 {
         color: ${props => props.theme.colors.dark1}
     }
@@ -85,7 +87,6 @@ export const ContentWrapper = styled.main`
         text-align: center;
         max-width: 36rem;
         margin: 3rem auto;
-        /* 다른 모든 margin들은 overlapped될 것 */
     }
     ul, ol {
         color: ${props => props.theme.colors.dark2};
@@ -115,6 +116,4 @@ export const ContentWrapper = styled.main`
         padding: 0.5rem;
         font-weight: 700;
         border:  1px solid ${props => props.theme.colors.dark3};
-    }
-
-`
+    } */
