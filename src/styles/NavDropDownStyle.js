@@ -4,7 +4,6 @@ export const StyledBurger = styled.div`
     width: 2rem;
     height: 2rem;
     position: fixed;
-    top: 41px;
     right: 40px;
     z-index: 15;
     display: none;
@@ -67,6 +66,8 @@ export const RightNavIcon = styled.div`
         top: -40px;
     }
 `
+
+
 
 export const Tooltip = styled.span`
     color: ${props => props.theme.colors.light1};

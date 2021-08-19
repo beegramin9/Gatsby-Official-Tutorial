@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const HeaderWrapper = styled.div`
     grid-column: 2 / span 14;
     height: 5rem;
-    margin: 1.25rem 0 0;
     display: flex;
+    margin-top: 1.5rem;
     justify-content: space-between;
     align-items: center;
     
@@ -23,6 +23,15 @@ export const BlogNameWrapper = styled.div`
         height: 30px;
     }
     & p {
-        /* 미완성 */
+        background: linear-gradient(121.57deg, rgb(33, 28, 24) 18.77%, rgba(70, 65, 61, 0.9) 60.15%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -ms-background-clip: text;
+        -ms-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+        font-size: 40;
+        text-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+        letter-spacing: 2px;
     }
 `

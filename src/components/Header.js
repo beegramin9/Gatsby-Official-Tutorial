@@ -11,7 +11,7 @@ export const Header = () => {
         <HeaderWrapper>
             <BlogNameWrapper>
                 <StaticImage src='../images/header/logo.svg' alt="Blog Logo"/>
-                <p>Wontae's Blog</p>
+                <p>DEV</p>
             </BlogNameWrapper>
             <NavDropDown/>
         </HeaderWrapper>

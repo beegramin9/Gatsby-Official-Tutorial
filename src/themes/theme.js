@@ -1,6 +1,7 @@
 const theme = {
     fonts: {
         main: 'Muli, sans-serif',
+        title: "Space Grotesk, sans-serif",
         code: 'Roboto Mono, monospace'
     },
     colors : {
@@ -22,6 +23,7 @@ const theme = {
         violet: '#a81d99',
         buttonpurple: "rgb(122, 109, 211)",
         darkpurple: "hsl(232.7,27.3%,23.7%)",
+        gray: "rgba(199, 198, 193, .3)",
     },
     breakpoints: {
         tablet: "only screen and (max-width: 65rem)",
