@@ -24,8 +24,18 @@ export const IntroductionWrapper = styled.section`
         flex: 6;
         display: flex;
         flex-direction: column;
+        justify-content: flex-start;
         gap: 1rem 0;
         letter-spacing: 1px;
+
+        div {
+            display: flex;
+            justify-content: flex-start;
+
+            @media ${(props) => props.theme.breakpoints.tablet} {
+                justify-content: center;
+            }
+        }
     }
 `
 

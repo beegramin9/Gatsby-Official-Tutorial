@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 export const ButtonWrapper = styled(motion.button)`
+    max-height: 30px;
     margin-top: 1rem;
     padding: .5rem .75rem;
     background-color: ${props => props.theme.colors.main1};

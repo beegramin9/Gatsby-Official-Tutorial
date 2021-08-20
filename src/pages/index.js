@@ -25,11 +25,13 @@ const IndexPage = () => {
                         </P>
                         <P>{'\u00A0'}I mostly work on Front-end, proficient in React and other derivative frameworks & libraries.</P>
                         <P>{'\u00A0'}Want to know more about me? Check out my own portfolio Website :)</P>
-                        <Button>
-                            <a href="https://www.wontaechoi.tech/">
-                                Portfolio Website
-                            </a>
-                        </Button>
+                        <div>
+                            <Button>
+                                <a href="https://www.wontaechoi.tech/">
+                                    Portfolio Website
+                                </a>
+                            </Button>
+                        </div>
                     </article>
                 </IntroductionWrapper>
             </ContentWrapper>
