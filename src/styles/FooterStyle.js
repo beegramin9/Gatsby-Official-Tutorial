@@ -6,34 +6,29 @@ export const FooterWrapper = styled.footer`
 
     grid-column: 2 / span 14 ;
     min-height: 11.25rem;
-    padding: 3rem 0;
+    
+    padding-top: 3rem;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
 `
 
-export const FooterSocialWrapper = styled.div`
+export const FooterIconWrapper = styled.div`
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: center;
-
-    & p {
-        text-align: center;
-        flex: 0 0 100%;
-    }
-`;
-
-export const FooterSocialIcons = styled.div`
-    flex: 0 0 100%;
-    margin-bottom: 2rem;
-
-    img {
+    gap: 0 2rem;
+    & img {
+        width: 30px;
         height: 30px;
-        padding: 0 1rem;
         transition: filter 0.3s ease;
         :hover, :focus {
             filter: brightness(50%);
         }
     }
+`
+
+export const FooterTextWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `

@@ -48,6 +48,7 @@ export const RightNav = styled.div`
     }
 
     img {
+        width: 30px;
         height: 30px;
     }
 `;

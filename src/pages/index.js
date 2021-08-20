@@ -14,7 +14,7 @@ const IndexPage = () => {
             <ContentWrapper>
                 <H1 textAlign="center" textShadow="3px 3px 0px rgba(0,0,0,0.2)" margin="0 0 2rem" >
                     {/* $Blog/Developer/Wontae */}
-                    Hi there, Glad you are here!
+                    Hi, Glad you are here!
                 </H1>
                 <IntroductionWrapper>
                     <div>
