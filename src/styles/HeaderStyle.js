@@ -20,6 +20,7 @@ export const BlogNameWrapper = styled.div`
     align-items: center;
     gap: 1em;
     & img {
+        width: 30px;
         height: 30px;
     }
     & p {
