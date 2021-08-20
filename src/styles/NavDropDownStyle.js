@@ -1,52 +1,63 @@
 import styled from 'styled-components';
 
+export const DropDownWrapper = styled.div`
+    @media ${(props) => props.theme.breakpoints.mobile} {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    `
+
+
 export const StyledBurger = styled.div`
-    width: 2rem;
-    height: 2rem;
-    position: fixed;
-    right: 40px;
+    width: 30px;
+    height: 30px;
     z-index: 15;
     display: none;
     @media ${(props) => props.theme.breakpoints.mobile} {
         display: flex;
+        /* 이걸 between으로 바꾸면 X자가 안나오고
+        space-around으로하면 수평이 안맞는다.. */
+        flex-direction: column;
+        align-items: center;
         justify-content: space-around;
-        flex-flow: column nowrap;
+        position: relative;
+        left: 3px;
     }
     div {
-        width: 2rem;
-        height: 0.25rem;
-        background-color: ${( props ) => props.theme.colors.dark1};
+        width: 30px;
+        height: 0.125rem;
+        background-color: ${( props ) => props.theme.colors.dark3};
         border-radius: 10px;
         transform-origin: 1px;
         transition: all 0.3s linear;
         &:nth-child(1) {
-            transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
+            transform: ${({ doesShowIcons }) => doesShowIcons ? 'rotate(45deg)' : 'rotate(0)'};
         }
         &:nth-child(2) {
-            transform: ${({ open }) => open ? 'translateX(100%)' : 'translateX(0)'};
-            opacity: ${({ open }) => open ? 0 : 1};
+            transform: ${({ doesShowIcons }) => doesShowIcons ? 'translateX(100%)' : 'translateX(0)'};
+            opacity: ${({ doesShowIcons }) => doesShowIcons ? 0 : 1};
         }
         &:nth-child(3) {
-            transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
+            transform: ${({ doesShowIcons }) => doesShowIcons ? 'rotate(-45deg)' : 'rotate(0)'};
         }
     }
 `
 export const RightNav = styled.div`
     display: flex;
-    gap: 2rem;
-
+    gap: 0 2rem;
+    /* 400px을 내려가면 아이콘이 아니라 RightNav 자체가 안보이는데? */
     @media ${(props) => props.theme.breakpoints.mobile} {
-    flex-direction: column;
-    justify-content: flex-start;
-    position: fixed;
-    z-index: 19;
-    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(200px)'};
-    top: 85px;
-    right: 45px;
-    transition: transform 0.3s ease-in-out;
-    gap: 1.5rem
+        margin-top: 3rem;
+        display: flex;
+        gap: 2rem 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        z-index: 19;
+        transform: ${({ doesShowIcons }) => doesShowIcons ? 'translateY(0)' : 'translateY(-100vh)'};
+        transition: transform 0.6s cubic-bezier(.31,-0.06,.37,1.55);
     }
-
+    /* 아이콘도 안보이고... */
     img {
         width: 30px;
         height: 30px;
@@ -67,8 +78,6 @@ export const RightNavIcon = styled.div`
         top: -40px;
     }
 `
-
-
 
 export const Tooltip = styled.span`
     color: ${props => props.theme.colors.light1};

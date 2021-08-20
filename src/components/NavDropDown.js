@@ -1,22 +1,22 @@
 import React, { useState } from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
-import { StyledLink, RightNavIcon, Tooltip,
+import { StyledLink, DropDownWrapper, RightNavIcon, Tooltip,
      StyledBurger, RightNav } from "../styles";
 
 export const NavDropDown = () => {
-    const [ open, setOpen ] = useState(false);
+    const [ doesShowIcons, setDoesShowIcons ] = useState(false);
     const handleClickHamburger = () => {
-        setOpen(!open);
+        setDoesShowIcons(!doesShowIcons);
     };
 
     return (
-        <>
-            <StyledBurger open={open} onClick={handleClickHamburger}>
+        <DropDownWrapper doesShowIcons={doesShowIcons}>
+            <StyledBurger doesShowIcons={doesShowIcons} onClick={handleClickHamburger}>
                 <div/>
                 <div/>
                 <div/>
             </StyledBurger>
-            <RightNav open={open}>
+            <RightNav doesShowIcons={doesShowIcons}>
                 <RightNavIcon>
                     <Tooltip backgroundColor="#fe4e18">Home</Tooltip> 
                     <StyledLink to="/">
@@ -36,7 +36,7 @@ export const NavDropDown = () => {
                     </StyledLink>
                 </RightNavIcon>
             </RightNav>
-        </>
+        </DropDownWrapper>
     )
 }
 
