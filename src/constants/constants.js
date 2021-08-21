@@ -17,7 +17,7 @@ export const arrayOfProject = [
             'https://img.shields.io/badge/StyledComponents-DB7093?style=flat-square&logo=Styled-Components&logoColor=white', 
             /* 'https://img.shields.io/badge/Sass-CC6699?style=flat-square&logo=Sass&logoColor=white' */],
         link: 'https://beegramin9.github.io/ReactJS-Nomad-MovieApp/#/',
-        readme: 'https://github.com/beegramin9/ReactJS-Nomad-MovieApp',
+        github: 'https://github.com/beegramin9/ReactJS-Nomad-MovieApp',
         id: 0,
     },
     {
@@ -29,7 +29,7 @@ export const arrayOfProject = [
         /* 'https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white', 
         'https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white' */],
         link: 'https://beegramin9.github.io/HCJ-Nomad-PaintBrushClone/',
-        readme: 'https://github.com/beegramin9/HCJ-Nomad-PaintBrushClone',
+        github: 'https://github.com/beegramin9/HCJ-Nomad-PaintBrushClone',
         id: 1,
     },
     {
@@ -40,7 +40,7 @@ export const arrayOfProject = [
             'https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white', 
             /* 'https://img.shields.io/badge/StyledComponents-DB7093?style=flat-square&logo=Styled-Components&logoColor=white' */],
         link: 'https://beegramin9.github.io/React-NetNinja-FramerMotion/',
-        readme: 'https://github.com/beegramin9/React-NetNinja-FramerMotion',
+        github: 'https://github.com/beegramin9/React-NetNinja-FramerMotion',
         id: 2,
     },
     {
@@ -52,7 +52,7 @@ export const arrayOfProject = [
             /* 'https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white', 
             'https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white' */],
         link: 'https://beegramin9.github.io/HCJ-Nomad-MomentumClone/',
-        readme: 'https://github.com/beegramin9/HCJ-Nomad-MomentumClone',
+        github: 'https://github.com/beegramin9/HCJ-Nomad-MomentumClone',
         id: 3,
     },
     {
@@ -64,7 +64,7 @@ export const arrayOfProject = [
         /* 'https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white', 
         'https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white' */],
         link: 'https://beegramin9.github.io/HCJ-Nomad-CalculatorClone/',
-        readme: 'https://github.com/beegramin9/HCJ-Nomad-CalculatorClone',
+        github: 'https://github.com/beegramin9/HCJ-Nomad-CalculatorClone',
         id: 4,
     }
 ];

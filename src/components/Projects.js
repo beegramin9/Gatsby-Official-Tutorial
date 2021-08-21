@@ -7,7 +7,7 @@ import { arrayOfProject } from '../constants/constants';
 export const Projects = () => {
     return (
         <ProjectsWrapper>
-            {arrayOfProject.map(({ id, title, description, image, tags, link, readme }) => (
+            {arrayOfProject.map(({ id, title, description, image, tags, link, github }) => (
                 <ProjectCard key={id}>
                 <img src={image} alt={title}/>
                 <h3>{title}</h3>
@@ -25,7 +25,7 @@ export const Projects = () => {
                 })}</p>
                 <ProjectLinks>
                     <a href={link}>Link</a>
-                    <a href={readme}>Readme</a>
+                    <a href={github}>Github</a>
                 </ProjectLinks>
             </ProjectCard>
         ))}
