@@ -75,7 +75,7 @@ export const RightNavIcon = styled.div`
     &:hover span {
         opacity: 1;
         pointer-events: auto;
-        top: -40px;
+        top: -30px;
     }
 `
 
@@ -83,7 +83,7 @@ export const Tooltip = styled.span`
     color: ${props => props.theme.colors.light1};
     background-color: ${props => props.backgroundColor};
     box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
-    padding: 7px;
+    padding: 5px;
     border-radius: 25px;
     position: absolute;
     z-index: 25;

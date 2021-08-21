@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Wontae\'s Dev Blog",
+    title: "Dev Blog",
     description: "A simple blog built with Gatsby and MDX",
     image: '/pages/indexImage.jpg',
     author: "WontaeChoi",
@@ -54,6 +54,19 @@ module.exports = {
     },
     "gatsby-plugin-styled-components",
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Dev Blog",
+        short_name: "Dev Blog",
+        start_url: "/",
+        background_color: "#6b37bf",
+        theme_color: "#6b37bf",
+        display: "standalone",
+        icon: "src/images/icon.png", // This path is relative to the root of the site.
+        crossOrigin: `use-credentials`,
+      },
+    },
   ],
 };
 // transform plugin은 다른 타입의 nodes를 필요한 타입의 nodes로 변환한다
