@@ -2,10 +2,10 @@ module.exports = {
   siteMetadata: {
     /* HTML Title, 페이지마다 Seo를 주면 설정 가능하다 */
     title: "Dev Blog",
-    description: "A simple blog built with Gatsby and MDX",
-    image: '/pages/indexImage.jpg',
+    description: "A Dev blog built with Gatsby and MDX",
+    image: '/images/pages/indexImage.jpg',
     author: "WontaeChoi",
-    url: 'https://wontaechoi.tech',
+    url: 'https://wontaeblog.space',
   },
   plugins: [
     "gatsby-plugin-gatsby-cloud",
