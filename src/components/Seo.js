@@ -15,7 +15,6 @@ export const Seo = ({title, description, image, article  }) => {
         defaultImage,
     } = site.siteMetadata;
 
-    console.log('defaultImage:',siteUrl, defaultImage)
     const seo = {
         title: title || defaultTitle,
         description: description || defaultDescription,

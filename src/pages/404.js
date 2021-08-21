@@ -4,7 +4,6 @@ import { StaticImage } from 'gatsby-plugin-image';
 import { Layout, Button, Seo } from '../components';
 import { HeroImageWrapper, ContentWrapper, H1 } from "../styles";
 
-// markup
 const NotFoundPage = (props) => {
   console.log(props)
   return (

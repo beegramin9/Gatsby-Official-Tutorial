@@ -7,6 +7,7 @@ import { StyledLink,
     HeroImageWrapper, ContentWrapper, 
     EachPostWrapper,
     H1, H2, P } from '../styles';
+import postsImage from '../images/pages/postsImage.jpg';
 
 const allPosts = ({ pageContext, data }) => {
     const { currentPage, totalNumOfPages } = pageContext;
@@ -18,9 +19,16 @@ const allPosts = ({ pageContext, data }) => {
 
     //* Allpost에서는 heroImage도 static이고 따로 중요한 데이터가 없으니
     // seo default값을 사용한다
+    /* title={data.mdx.frontmatter.title}
+        image={seoImage}
+        description={data.mdx.frontmatter.excerpt} */
     return (
         <Layout>
-            <Seo/>
+            <Seo
+            title="Blog Posts"
+            description="Talks about anything from mundane to professional"
+            image={postsImage}
+            />
             <HeroImageWrapper>
                 <StaticImage
                     alt="Hero Image"
