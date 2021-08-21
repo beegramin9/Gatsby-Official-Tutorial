@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    /* HTML Title, 페이지마다 Seo를 주면 설정 가능하다 */
     title: "Dev Blog",
     description: "A simple blog built with Gatsby and MDX",
     image: '/pages/indexImage.jpg',
