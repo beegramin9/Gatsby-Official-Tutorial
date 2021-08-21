@@ -10,5 +10,7 @@ export const HeroImageWrapper = styled.div`
     @media ${props => props.theme.breakpoints.tablet} {
     }
     @media ${props => props.theme.breakpoints.mobile} {
+        margin: ${props => 
+        `0 ${props.theme.spacings.xSmall}`};
     }
 `

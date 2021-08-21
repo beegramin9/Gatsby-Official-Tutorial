@@ -34,7 +34,7 @@ export const Footer = () => {
                 </a>
             </FooterIconWrapper>
             <FooterTextWrapper>
-                <P size='xxSmall' color="dark3">This blog is 
+                <P fontSize='xSmall' color="dark3">This blog is 
                     <motion.span
                         variants={blinkVarinats}
                         initial="hidden"
@@ -44,7 +44,7 @@ export const Footer = () => {
                     with Gatsby
                     {'\u00A0'}<GrGatsbyjs size=".8rem" color="#633194" />{'\u00A0'}
                 </P>
-                <P size='xxSmall' color="dark3"
+                <P fontSize='xSmall' color="dark3"
                 >ⓒ 2021 Company. All right reserved</P>
             </FooterTextWrapper>
         </FooterWrapper> 

@@ -30,13 +30,13 @@ const allPosts = ({ pageContext, data }) => {
                 <H1 textAlign="center" textShadow="3px 3px 0px rgba(0,0,0,0.2)" margin="0 0 2rem">Blog Posts</H1>
                 {postNodes.map(postNode => (
                     <EachPostWrapper key={postNode.id}>
-                        <H2>
+                        <H2 textAlign="center">
                             <StyledLink to={`/posts/${postNode.frontmatter.slug}`}>
                                 {postNode.frontmatter.title}
                             </StyledLink>
                         </H2>
-                        <P color="dark2">{postNode.frontmatter.excerpt}</P>
-                        <P color="dark3">Posted: {postNode.frontmatter.date}</P>
+                        <P textAlign="center" color="dark2">{postNode.frontmatter.excerpt}</P>
+                        <P textAlign="center" color="dark3">Posted: {postNode.frontmatter.date}</P>
                     </EachPostWrapper>
                 ))}
             </ContentWrapper>

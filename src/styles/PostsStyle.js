@@ -5,5 +5,13 @@ export const EachPostWrapper = styled.article`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: ${props => props.theme.spacings.xSmall};
+    gap: ${props => `o ${props.theme.spacings.xSmall}`};
+
+    @media ${props => props.theme.breakpoints.tablet} {
+        margin-bottom: 4rem;
+    }
+    
+    @media ${props => props.theme.breakpoints.mobile} {
+        margin-bottom: 5rem;
+    }
 `

@@ -13,9 +13,13 @@ export const HeaderWrapper = styled.div`
     @media ${props => props.theme.breakpoints.mobile} {
         /* 2에서부터 15개씩이어야 총 16,
         근데 사실 맨 끝에 선이 하나 더 있으니 17임 */
-        grid-column: 1 / 17;
+        /* grid-column: 1 / 17;
         padding: ${props => 
-        `0 ${props.theme.spacings.large}`};
+        `0 ${props.theme.spacings.large}`}; */
+        display: flex;
+        justify-content: space-between;
+        padding: ${props => 
+        `0 ${props.theme.spacings.xSmall}`};
     }
 `;
 

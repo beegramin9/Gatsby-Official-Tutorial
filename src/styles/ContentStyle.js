@@ -16,7 +16,11 @@ export const ContentWrapper = styled.main`
         `${props.theme.spacings.xSmall} ${props.theme.spacings.small}`};
     }
     @media ${props => props.theme.breakpoints.mobile} {
+        display: flex;
+        flex-direction: column;
+        margin: ${props => 
+        `0 ${props.theme.spacings.small} ${props.theme.spacings.xxSmall}`};
         padding: ${props => 
-        `${props.theme.spacings.xxSmall} ${props.theme.spacings.xSmall}`};
+        `${props.theme.spacings.small} ${props.theme.spacings.xSmall}`};
     }
 `
