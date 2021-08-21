@@ -3,7 +3,6 @@ import { StaticImage } from 'gatsby-plugin-image';
 import { Layout, Projects, Seo } from '../components';
 import { HeroImageWrapper, ContentWrapper, H1} from "../styles";
 
-import projectsImage from '../images/pages/projectsImage.jpg';
 
 
 const projectsPage = ( ) => {
@@ -12,7 +11,6 @@ const projectsPage = ( ) => {
       <Seo
       title="Projects by Wontae"
       description="Shows my ideas, preferences and perspective"
-      image={projectsImage}
       />
       <HeroImageWrapper>
         <StaticImage src='../images/pages/projectsImage.jpg' alt="Hero Image"/>

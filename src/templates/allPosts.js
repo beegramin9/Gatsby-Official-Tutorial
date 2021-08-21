@@ -7,7 +7,6 @@ import { StyledLink,
     HeroImageWrapper, ContentWrapper, 
     EachPostWrapper,
     H1, H2, P } from '../styles';
-import postsImage from '../images/pages/postsImage.jpg';
 
 const allPosts = ({ pageContext, data }) => {
     const { currentPage, totalNumOfPages } = pageContext;
@@ -27,7 +26,6 @@ const allPosts = ({ pageContext, data }) => {
             <Seo
             title="Blog Posts"
             description="Talks about anything from mundane to professional"
-            image={postsImage}
             />
             <HeroImageWrapper>
                 <StaticImage
