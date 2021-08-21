@@ -1,11 +1,12 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
-import { Layout, Projects } from '../components';
+import { Layout, Projects, Seo } from '../components';
 import { HeroImageWrapper, ContentWrapper, H1} from "../styles";
 
 const projectsPage = ( ) => {
   return (
     <Layout>
+      <Seo/>
       <HeroImageWrapper>
         <StaticImage src='../images/pages/projectsImage.jpg' alt="Hero Image"/>
       </HeroImageWrapper>

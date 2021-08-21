@@ -1,6 +1,6 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
-import { Layout, Button } from '../components';
+import { Layout, Button, Seo } from '../components';
 import { HeroImageWrapper, ContentWrapper,IntroductionWrapper,
         H1, P } from "../styles";
 import Resume from "../downloads/resume.pdf";
@@ -8,6 +8,7 @@ import Resume from "../downloads/resume.pdf";
 const IndexPage = () => {
     return (
         <Layout>
+            <Seo/>
             <HeroImageWrapper>
                 <StaticImage src='../images/pages/indexImage.jpg' alt="Index Image"/>
             </HeroImageWrapper>

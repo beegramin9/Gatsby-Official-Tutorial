@@ -1,7 +1,7 @@
 // Step 1: Import React
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
-import { Layout, Button } from '../components';
+import { Layout, Button, Seo } from '../components';
 import { HeroImageWrapper, ContentWrapper, H1 } from "../styles";
 
 // markup
@@ -9,6 +9,7 @@ const NotFoundPage = (props) => {
   console.log(props)
   return (
     <Layout>
+      <Seo/>
       <HeroImageWrapper>
         <StaticImage src='../images/pages/404Image.jpg' alt="404 Image"/>
       </HeroImageWrapper>
