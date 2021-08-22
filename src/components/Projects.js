@@ -24,7 +24,7 @@ export const Projects = () => {
                     return (<span key={index}>{line}<br/>&nbsp;</span>)
                 })}</p>
                 <ProjectLinks>
-                    <a href={link}>Link</a>
+                    <a href={link}>Try</a>
                     <a href={github}>Github</a>
                 </ProjectLinks>
             </ProjectCard>
