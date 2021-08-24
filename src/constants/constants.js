@@ -6,6 +6,7 @@ import Paintbrush from '../images/projects/Paintbrush.gif';
 import Pizza from '../images/projects/Pizza.gif';
 import Momentum from '../images/projects/Momentum.gif';
 import Calculator from '../images/projects/Calculator.gif';
+// import Touchslider from '../images/projects/Touchslider.gif';
 
 
 export const arrayOfProject = [
@@ -66,5 +67,15 @@ export const arrayOfProject = [
         link: 'https://beegramin9.github.io/HCJ-Nomad-CalculatorClone/',
         github: 'https://github.com/beegramin9/HCJ-Nomad-CalculatorClone',
         id: 4,
-    }
+    },
+    /* {
+        title: 'Touch Slider Clone',
+        description: "Horizontal touch slider appliable to features like Netflix movies, Youtube shorts and Instagram stories slider",
+        image: Touchslider,
+        tags: ['https://img.shields.io/badge/MDNCanvas-01756c?style=flat-square&logo=MDN Web Docs&logoColor=white',
+        'https://img.shields.io/badge/Javascript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=white'],
+        link: 'https://beegramin9.github.io/HCJ-TouchSlider/',
+        github: 'https://github.com/beegramin9/HCJ-TouchSlider',
+        id: 5,
+    }, */
 ];
