@@ -1,54 +1,22 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+## Project Status
+![Generic badge](https://img.shields.io/badge/build-passing-green.svg)
+<br/> [Link](https://www.wontaeblog.space). try!
 
-## 🚀 Quick start
+## Overview
+![Blog](https://user-images.githubusercontent.com/58083434/130402483-77c32103-ace9-4db4-bd9a-fa6680eecdc1.gif)
 
-1.  **Create a Gatsby site.**
+## Technology Stack
+<img src='https://img.shields.io/badge/Gatsby-663399?style=flat-square&logo=Gatsby&logoColor=white'/></a>&nbsp;
+<img src="https://img.shields.io/badge/GraphQL-E434AA?style=flat-square&logo=GraphQL&logoColor=white"/></a>&nbsp;
+<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white"/></a>&nbsp;
+<img src="https://img.shields.io/badge/Framer-df0eb1?style=flat-square&logo=Framer&logoColor=white"/>&nbsp;
+<img src='https://img.shields.io/badge/StyledComponents-DB7093?style=flat-square&logo=Styled-Components&logoColor=white'/></a>&nbsp;
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+## Outline
+&nbsp; I could not deny how much of a great help it has been from many other's dev Blogs. So I decided to make my own. This blog is made with Gatsby and gets access to data through GraphQL. No, I did not just decide to use premaid-blog providing services like devDojo, I wanted make mine on my own! The contents always see to be updated in real time, and you can always come over to check out.
+<br/><br/>
+&nbsp; 개발하면서 배운 것들을 정리하는 개발 블로그입니다. 저에 대한 간단한 소개와 프로젝트도 확인할 수 있습니다. Gatsby official documentation을 보며 개발하면서 제 아이디어와 프로젝트를 추가했습니다. Gatsby는 React 기반 Static Generator로, static website를 빠르게 띄워 더 나은 사용자 경험을 제공합니다. 프로젝트를 하면서 React와 개발 문서를 읽는 힘을 매우 기를 수 있었습니다.
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+## Main Feature Code
 
-2.  **Start developing.**
 
-    Navigate into your new site’s directory and start it up.
-
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
-
-3.  **Open the code and start customizing!**
-
-    Your site is now running at http://localhost:8000!
-
-    Edit `src/pages/index.js` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
