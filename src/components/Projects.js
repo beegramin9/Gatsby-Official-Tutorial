@@ -4,22 +4,6 @@ import { ProjectSwitchButtonWrapper, ProjectsWrapper, ProjectCard, ProjectLinks,
 import { arrayOfStaticProject } from '../constants/staticProjects';
 import { arrayOfServerProject } from '../constants/serverProjects';
 
-const transitionProjectsVariants = {
-    hidden: { 
-        opacity: 0, 
-        x: '100vw' 
-    },
-    visible: { 
-        opacity: 1, 
-        x: 0,
-        transition: { duration: .4 }
-    },
-    exit: {
-        x: "-100vh",
-        transition: { ease: 'cubic-bezier(0.68, -0.55, 0.265, 1.55)' }
-    }
-};
-
 export const Projects = () => {
     const [ displayingArrayOfProject, setDisplayingArrayOfProject ] = useState(arrayOfStaticProject);
 
@@ -35,10 +19,6 @@ export const Projects = () => {
             </ProjectSwitchButtonWrapper>
 
             <ProjectsWrapper
-                variants={transitionProjectsVariants}
-                initial="hidden"
-                animate="visible"
-                exit="exit"
                 >
                 {displayingArrayOfProject.map(({ id, title, description, image, tags, link, github }) => (
                     <ProjectCard key={id}>

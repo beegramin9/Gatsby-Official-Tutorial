@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { motion } from "framer-motion";
 
 export const ProjectSwitchButtonWrapper = styled.div`
     display: flex;
@@ -9,7 +8,7 @@ export const ProjectSwitchButtonWrapper = styled.div`
 `;
 
 
-export const ProjectsWrapper = styled(motion.div)`
+export const ProjectsWrapper = styled.div`
     color: none;
     background-color: none;
     display: grid;
@@ -20,7 +19,7 @@ export const ProjectsWrapper = styled(motion.div)`
         display: flex;
         flex-direction: column;
     }
-`
+`;
 
 export const ProjectCard = styled.div`
     max-width: 360px;
