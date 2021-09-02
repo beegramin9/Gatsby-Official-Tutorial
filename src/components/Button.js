@@ -8,7 +8,7 @@ const buttonVariants = {
         boxShadow: "0px 0px 8px rgb(255,255,255)",
         transition: {
             duration: 0.3,
-            yoyo: Infinity
+            repeat: Infinity
         }
     },
     tap: {
@@ -17,17 +17,20 @@ const buttonVariants = {
         boxShadow: "0px 0px 8px rgb(255,255,255)",
         transition: {
             duration: 0.3,
-            yoyo: Infinity
+            repeat: Infinity
         }
     },
 };
 
-export const Button = ({children}) => {
+export const Button = ({backgroundColor, children, onClick}) => {
     return (
         <ButtonWrapper
         variants={buttonVariants}
         whileHover="hover"
-        whileTap="tap">
+        whileTap="tap"
+        onClick={onClick}
+        backgroundColor={backgroundColor}
+        >
             {children}
         </ButtonWrapper>
     )

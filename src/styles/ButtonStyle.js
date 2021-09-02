@@ -5,7 +5,7 @@ export const ButtonWrapper = styled(motion.button)`
     max-height: 30px;
     margin-top: 1rem;
     padding: .5rem .75rem;
-    background-color: ${props => props.theme.colors.main1};
+    background-color: ${props => props.backgroundColor ? props.backgroundColor : props.theme.colors.main1};
     border: none;
     border-radius: .5rem;
     color: ${props => props.theme.colors.light1};

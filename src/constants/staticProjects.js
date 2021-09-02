@@ -9,7 +9,7 @@ import Calculator from '../images/projects/Calculator.gif';
 // import Touchslider from '../images/projects/Touchslider.gif';
 
 
-export const arrayOfProject = [
+export const arrayOfStaticProject = [
     {
         title: 'Movie Archive Webapp',
         description: "This project works on a movie list api, added with custom responsive design.\nThere are many reusable features such as custom Axios&pagination Hook, styled components, routers and loading spinner.",

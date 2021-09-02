@@ -17,10 +17,8 @@ const NotFoundPage = (props) => {
           Uh-oh... What you're looking for couldn't be found😑
         </H1>
         <div style={{display:'flex', justifyContent:"center"}}>
-          <Button>
-            <span onClick={() => window.history.back()}>
+          <Button onClick={() => window.history.back()}>
               Back
-            </span>
           </Button>
         </div>
       </ContentWrapper>

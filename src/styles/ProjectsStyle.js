@@ -1,6 +1,15 @@
 import styled from 'styled-components';
+import { motion } from "framer-motion";
 
-export const ProjectsWrapper = styled.section`
+export const ProjectSwitchButtonWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    gap: 0 2rem;
+    margin-bottom: 1rem;
+`;
+
+
+export const ProjectsWrapper = styled(motion.div)`
     color: none;
     background-color: none;
     display: grid;
