@@ -12,7 +12,7 @@ export const arrayOfServerProject = [
             "https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=MongoDB&logoColor=white",
             "https://img.shields.io/badge/Scss-CC6699?style=flat-square&logo=Sass&logoColor=white",
         ],
-        link: 'https://github.com/beegramin9/NodeJS-MarkdownBlog',
+        /* link: 'https://github.com/beegramin9/NodeJS-MarkdownBlog', */
         github: 'https://github.com/beegramin9/NodeJS-MarkdownBlog',
         id: 0,
     },
@@ -25,7 +25,7 @@ export const arrayOfServerProject = [
             "https://img.shields.io/badge/Flask-000000?style=flat-square&logo=Flask&logoColor=white",
             "https://img.shields.io/badge/SQLAlchemy-CC2927?style=flat-square&logo=Databricks&logoColor=white",
         ],
-        link: 'https://github.com/beegramin9/Python-Flask-Restful-API',
+        /* link: 'https://github.com/beegramin9/Python-Flask-Restful-API', */
         github: 'https://github.com/beegramin9/Python-Flask-Restful-API',
         id: 1,
     },
