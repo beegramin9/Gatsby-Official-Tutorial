@@ -27,7 +27,10 @@ const IndexPage = () => {
                         <P>{'\u00A0'}I mostly work on Front-end, proficient in React and other derivative frameworks & libraries.</P>
                         <P>{'\u00A0'}Want to know more about me? Check out my own portfolio Website :)</P>
                         <div>
-                            <Button onClick="location.href='https://www.wontaechoi.tech/'">
+                            <Button onClick={(e) => { 
+                                    e.preventDefault();
+                                    window.location.href = 'https://www.wontaechoi.tech/';
+                                    }}>
                                 Portfolio Website
                             </Button>
                         </div>
