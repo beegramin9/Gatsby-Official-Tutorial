@@ -18,7 +18,7 @@ export const arrayOfStaticProject = [
             'https://img.shields.io/badge/StyledComponents-DB7093?style=flat-square&logo=Styled-Components&logoColor=white', 
             /* 'https://img.shields.io/badge/Sass-CC6699?style=flat-square&logo=Sass&logoColor=white' */],
         link: 'https://beegramin9.github.io/ReactJS-Nomad-MovieApp/#/',
-        github: 'https://github.com/beegramin9/ReactJS-Nomad-MovieApp',
+        github: 'https://beegramin9.github.io/ReactJS-Public-API/#/',
         id: 0,
     },
     {
@@ -30,7 +30,7 @@ export const arrayOfStaticProject = [
         /* 'https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white', 
         'https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white' */],
         link: 'https://beegramin9.github.io/HCJ-Nomad-PaintBrushClone/',
-        github: 'https://github.com/beegramin9/HCJ-Nomad-PaintBrushClone',
+        github: 'https://beegramin9.github.io/JsCanvasAPI-PaintBrushClone/',
         id: 1,
     },
     {
@@ -41,7 +41,7 @@ export const arrayOfStaticProject = [
             'https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white', 
             /* 'https://img.shields.io/badge/StyledComponents-DB7093?style=flat-square&logo=Styled-Components&logoColor=white' */],
         link: 'https://beegramin9.github.io/React-NetNinja-FramerMotion/',
-        github: 'https://github.com/beegramin9/React-NetNinja-FramerMotion',
+        github: 'https://beegramin9.github.io/React-FramerMotion/',
         id: 2,
     },
     {
@@ -53,21 +53,21 @@ export const arrayOfStaticProject = [
             /* 'https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white', 
             'https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white' */],
         link: 'https://beegramin9.github.io/HCJ-Nomad-MomentumClone/',
-        github: 'https://github.com/beegramin9/HCJ-Nomad-MomentumClone',
+        github: 'https://beegramin9.github.io/JavaScript-MomentumClone/',
         id: 3,
     },
-    {
+    /* {
         title: 'Calculator Clone',
         description: "The number blocks and button blocks are constructed within CSS3 grid, flex, which made easier to remain intact when the web moves responsively.",
         image: Calculator,
         tags: ['https://img.shields.io/badge/ES6-004027?style=flat-square&logo=JSON&logoColor=white',
         'https://img.shields.io/badge/Javascript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=white', 
-        /* 'https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white', 
-        'https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white' */],
+        'https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white', 
+        'https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white'],
         link: 'https://beegramin9.github.io/HCJ-Nomad-CalculatorClone/',
         github: 'https://github.com/beegramin9/HCJ-Nomad-CalculatorClone',
         id: 4,
-    },
+    }, */
     /* {
         title: 'Touch Slider Clone',
         description: "Horizontal touch slider appliable to features like Netflix movies, Youtube shorts and Instagram stories slider",
